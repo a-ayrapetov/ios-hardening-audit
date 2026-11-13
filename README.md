@@ -1,11 +1,11 @@
 # ios-hardening-audit
 
-[![ci](https://github.com/a-ayrapetov/ios-hardening-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/a-ayrapetov/ios-hardening-audit/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/ios-hardening-audit)](https://pypi.org/project/ios-hardening-audit/)
+[![ci](https://github.com/a-ayrapetov/ios-hardening-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/a-ayrapetov/ios-hardening-audit/actions/workflows/ci.yml)
 
 Offline security hardening audit for Cisco IOS and IOS-XE running-configs. Point it at one config or a folder of fifty and get, per device, every gap with severity, the evidence line and the exact fix.
 
 ```bash
-pip install ios-hardening-audit
+pip install git+https://github.com/a-ayrapetov/ios-hardening-audit
 ios-harden configs/*.cfg --csv findings.csv
 ```
 
