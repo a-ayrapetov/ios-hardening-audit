@@ -9,7 +9,7 @@ description = "Offline security hardening audit of Cisco IOS / IOS-XE running-co
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Arkadiy Ayrapetov" }]
 dependencies = []
 keywords = ["cisco", "ios-xe", "hardening", "security", "audit", "cis"]
