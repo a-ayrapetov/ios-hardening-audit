@@ -9,6 +9,19 @@ pip install git+https://github.com/a-ayrapetov/ios-hardening-audit
 ios-harden configs/*.cfg --csv findings.csv
 ```
 
+## When to run it
+
+```mermaid
+flowchart LR
+  R([New site, handover<br/>or audit]) --> P[Pull configs read-only] --> T[Run ios-harden] --> D1{DP 1}
+  D1 -->|high findings| F[Apply the fix lines<br/>in a change window] --> T
+  D1 -->|no high findings| B[Medium and low<br/>to the backlog] --> S([Save the approved<br/>baseline])
+
+  style R fill:#1f6feb,color:#fff,stroke:none
+  style D1 fill:#6e40c9,color:#fff,stroke:none
+  style S fill:#1a7f37,color:#fff,stroke:none
+```
+
 ## Rules
 
 | ID | Severity | Check |
